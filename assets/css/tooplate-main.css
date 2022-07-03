@@ -560,7 +560,16 @@ a {
 	color: #4a4a4a;
 	font-weight: 400;
 }
-
+.contact{
+	display: flex;
+}
+.contact-title{
+	font-size: 16px;
+	margin-top: 2px;
+}
+.contact-value{
+	font-size: 16px;
+}
 .brand-name{
 	color: #f2883E;
 	margin-left: 8px;
@@ -569,6 +578,7 @@ a {
 	display: flex;
     justify-content: center;
     align-items: center;
+	margin-top: 12px;
 }
 
 /* About Us Style */
