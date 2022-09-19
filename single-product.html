@@ -78,7 +78,7 @@ https://www.tooplate.com/view/2114-pixie
           <div class="col-md-12">
             <div class="section-heading">
               <div class="line-dec"></div>
-              <h1>Single Product</h1>
+              <h1 id="name">Single Product</h1>
             </div>
           </div>
           <div class="col-md-6">
@@ -121,8 +121,8 @@ https://www.tooplate.com/view/2114-pixie
           </div>
           <div class="col-md-6">
             <div class="right-content">
-              <h4>Single Product Name</h4>
-              <h6>$55.00</h6>
+              <h4 id="name2">Single Product Name</h4>
+              <h6>MRP <span id="price" class="fontSize"></span></h6>
               <p>
                 An Macky brand, Symbol is built on the pillars of quality, reliability and affordability, offering a range of lifestyle essentials that 
                 help you look good every day. This classic formal shirt is crafted with precision in cotton blend, two tone Fil a Fil fabric, to offer 
@@ -355,6 +355,13 @@ https://www.tooplate.com/view/2114-pixie
           t.style.color='#fff';
           }
       }
+    </script>
+    <script>
+      let name = localStorage.getItem('name');
+      let price = localStorage.getItem('price');
+      document.getElementById("name").innerHTML = name;
+      document.getElementById("name2").innerHTML = name;
+      document.getElementById("price").innerHTML = price;
     </script>
 
 
